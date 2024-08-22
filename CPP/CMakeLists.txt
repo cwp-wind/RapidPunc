@@ -24,7 +24,7 @@ endif()
 
 set(MAIN_SRC "sources/tokenizer.cpp" "sources/punc_infer.cpp"  "sources/constdef.cpp" "sources/libpuncapi.cpp" )
 
-add_library(${LIB_NAME} SHARED  ${MAIN_SRC})
+add_library(${LIB_NAME} STATIC  ${MAIN_SRC})
 
 target_compile_definitions(${LIB_NAME} PUBLIC -D_QMPUC_API_EXPORT)
 target_link_libraries( ${LIB_NAME} PUBLIC  yaml-cpp onnxruntime )
