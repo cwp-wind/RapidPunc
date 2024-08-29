@@ -4,9 +4,9 @@
 #define UNK_CHAR "<unk>"
 
 
-#define MODEL_FILE  "model.onnx"
+#define MODEL_FILE  "punc.bin"
 
-#define YAML_FILE "punc.yaml"
+#define YAML_FILE "punc.dat"
 
 /*
 input
